@@ -1,0 +1,103 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.content {
+    min-height: calc(100vh - 60px);
+}
+
+.chat-box-wrapper {
+    background: linear-gradient(0deg, rgba(207,226,255,1) 6%, rgba(86,102,226,1) 100%);
+}
+
+.chat-box {
+    height: 400px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.card-body .text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.selected-tag {
+    border: 2px solid !important;
+}
+
+#tags {
+    min-width: 300px;
+}
+
+.select2-selection {
+    border: 1px solid #ced4da !important;
+}
+
+.select2-results__options::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.select2-results__options::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+}
+
+.select2-results__options::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+}
+
+    .select2-results__options::-webkit-scrollbar-thumb:hover {
+        background: rgba(0,0,0,0.4);
+    }
+
+    .select2-results__options::-webkit-scrollbar-thumb:active {
+        background: rgba(0,0,0,.9);
+    }
+
+#message-text, .select2-selection {
+    height: 37px;
+}
+
+#message-text {
+    border-radius: .25rem;
+}
+
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+}
+
+    .chat-box::-webkit-scrollbar-thumb:hover {
+        background: rgba(0,0,0,0.4);
+    }
+
+    .chat-box::-webkit-scrollbar-thumb:active {
+        background: rgba(0,0,0,.9);
+    }

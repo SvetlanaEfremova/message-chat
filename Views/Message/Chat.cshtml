@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Chat";
+}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.2.1/bloodhound.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+<link rel="stylesheet" href="~/css/site.css">
+
+<div class="container content">
+    <div class="row">
+        <div class="col-md-4">
+            <h5>Tags:</h5>
+            <div id="my-tags" class="d-flex gap-2 justify-content-start py-2 flex-wrap">
+            </div>
+        </div>
+        <div class="chat-box-wrapper col-md-8 p-4 border-tertiary rounded-3">
+            <div id="chat-box" class="chat-box mb-4" style="max-height: 350px;">
+                <div class="card mb-3">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+            <hr class="border border-white" />
+            <form class="mt-4" id="send-message-form">
+                <div class="input-group gap-4">
+                    <input type="text" id="message-text" class="form-control" placeholder="Enter your message..." autocomplete="off" required>
+                    <select id="tags" multiple="multiple"> </select>
+                    <div class="input-group-append">
+                        <button type="submit" id="send-message-button" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/site.js"></script>
